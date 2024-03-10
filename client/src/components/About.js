@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/common.css';
 import '../assets/css/about.css';
+import '../assets/vendor/bootstrap-icons/bootstrap-icons.css';
 
 const About = () => {
 	return <>
@@ -30,7 +31,7 @@ const About = () => {
 		</div>
 
       </div>
-	<section id="team" className="team">
+	<section id="services" className="services">
 		<div className="container">
 			<div className="section-title">
 			  <h2>Our Services</h2>

@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../components/Hero';
 import Menu from '../components/Menu';
 import About from '../components/About';
+import Footer from '../components/Footer';
 import '../assets/css/common.css';
 import '../assets/css/home.css';
 
@@ -15,6 +16,7 @@ const Home = () => {
 				<About/>
 			</section>
 		</main>
+		<Footer/>
 	</>
 }
 
