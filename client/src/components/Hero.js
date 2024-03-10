@@ -8,8 +8,8 @@ const Hero = () => {
 	const slideImages = [
 	  {'heading':'Unlock Your Dream','para':'<p>Take the next step of your career with us.</p><p>Join EaseCorps for a secure career.</p>','img':'images/1.jpg','hAnimation':'animate__animated animate__fadeInDown','pAnimation':'animate__animated animate__fadeInUp','textColor':'#000'},
 	  {'heading':'Find Your Dream Job Now','para':'Job Search made easier, apply here for relevant positions.','img':'images/6.jpg','hAnimation':'animate__animated animate__backInDown','pAnimation':'animate__animated animate__fadeInRight','textColor':'#fff'},
-	  {'img':'images/7.jpg','hAnimation':'animate__animated animate__backInUp','pAnimation':'animate__animated animate__fadeInLeft','textColor':'#000'},
-	  {'img':'images/8.jpg','hAnimation':'animate__animated animate__fadeInRight','pAnimation':'animate__animated animate__fadeInRight','textColor':'#fff'},
+	  {'heading':'Mobile & Web Application Development','para':'<p>We provide our customers world class technologies</p><p>and solutions to turn thier dreams into reality.</p>','img':'images/7.jpg','hAnimation':'animate__animated animate__backInUp','pAnimation':'animate__animated animate__fadeInLeft','textColor':'#000'},
+	  {'heading':'Making IT Work Your Business','para':'<p>Helping you identify, implement & manage technology</p><p>based on your business requirements.</p>','img':'images/8.jpg','hAnimation':'animate__animated animate__fadeInRight','pAnimation':'animate__animated animate__fadeInRight','textColor':'#fff'},
 	  // Add more images as needed
 	];
 
