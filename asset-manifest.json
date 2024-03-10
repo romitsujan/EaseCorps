@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/EaseCorps/static/css/main.e8fb49f9.css",
-    "main.js": "/EaseCorps/static/js/main.7e002132.js",
+    "main.js": "/EaseCorps/static/js/main.860d17d2.js",
     "static/js/453.419a5d54.chunk.js": "/EaseCorps/static/js/453.419a5d54.chunk.js",
     "index.html": "/EaseCorps/index.html",
     "main.e8fb49f9.css.map": "/EaseCorps/static/css/main.e8fb49f9.css.map",
-    "main.7e002132.js.map": "/EaseCorps/static/js/main.7e002132.js.map",
+    "main.860d17d2.js.map": "/EaseCorps/static/js/main.860d17d2.js.map",
     "453.419a5d54.chunk.js.map": "/EaseCorps/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e8fb49f9.css",
-    "static/js/main.7e002132.js"
+    "static/js/main.860d17d2.js"
   ]
 }
