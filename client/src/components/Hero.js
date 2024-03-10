@@ -6,10 +6,10 @@ import 'animate.css';
 const Hero = () => {
 	const interval=5000;
 	const slideImages = [
-	  {'heading':'Unlock Your Dream','para':'<p>Take the next step of your career with us.</p><p>Join EaseCorps for a secure career.</p>','img':'images/1.jpg','hAnimation':'animate__animated animate__fadeInDown','pAnimation':'animate__animated animate__fadeInUp'},
-	  {'heading':'Find Your Dream Job Now','para':'Job Search made easier, apply here for relevant positions.','img':'images/6.jpg','hAnimation':'animate__animated animate__backInDown','pAnimation':'animate__animated animate__fadeInRight'},
-	  {'img':'images/7.jpg','hAnimation':'animate__animated animate__backInUp','pAnimation':'animate__animated animate__fadeInLeft'},
-	  {'img':'images/8.jpg','hAnimation':'animate__animated animate__fadeInRight','pAnimation':'animate__animated animate__fadeInRight'},
+	  {'heading':'Unlock Your Dream','para':'<p>Take the next step of your career with us.</p><p>Join EaseCorps for a secure career.</p>','img':'images/1.jpg','hAnimation':'animate__animated animate__fadeInDown','pAnimation':'animate__animated animate__fadeInUp','textColor':'#000'},
+	  {'heading':'Find Your Dream Job Now','para':'Job Search made easier, apply here for relevant positions.','img':'images/6.jpg','hAnimation':'animate__animated animate__backInDown','pAnimation':'animate__animated animate__fadeInRight','textColor':'#fff'},
+	  {'img':'images/7.jpg','hAnimation':'animate__animated animate__backInUp','pAnimation':'animate__animated animate__fadeInLeft','textColor':'#000'},
+	  {'img':'images/8.jpg','hAnimation':'animate__animated animate__fadeInRight','pAnimation':'animate__animated animate__fadeInRight','textColor':'#fff'},
 	  // Add more images as needed
 	];
 
@@ -33,31 +33,33 @@ const Hero = () => {
 	    }, interval);
 	 // Clean up the interval on component unmount
 	    return () => clearInterval(slideInterval);
-	  }, [currentIndex]); 
+	  }, [currentIndex]);
 
 	return <><div id="heroCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
 	     <Carousel interval={interval}>
-		 <Carousel.Item style={{"backgroundImage": `url(${slideImages[currentIndex].img})`}}>
+		{slideImages.map((image,index) => (
+		 <Carousel.Item style={{"backgroundImage": `url(${image.img})`}} key={index}>
 		  <div className="carousel-container">
 		    <div className="container">
-			<div className="row" style={{"color":`${textColor}`}}>
-				{currentIndex == 0 ? 
+			<div className="row" style={{"color":`${image.textColor}`}}>
+				{index == 0 ? 
 					<><div className="col-md-6 col-lg-4"></div>
 					<div className="col-md-6 col-lg-8">
-					      {slideImages[currentIndex].heading ? <h2 className={slideImages[currentIndex].hAnimation}>{slideImages[currentIndex].heading}</h2>:null}
-					      {slideImages[currentIndex].para ? <div className={slideImages[currentIndex].pAnimation} dangerouslySetInnerHTML={{__html: slideImages[currentIndex].para}}></div>:null}
+					      {image.heading ? <h2 className={image.hAnimation}>{image.heading}</h2>:null}
+					      {image.para ? <div className={image.pAnimation} dangerouslySetInnerHTML={{__html: image.para}}></div>:null}
 					</div></>
-					: 
+				: 
 					<><div className="col-md-6 col-lg-8">
-					      {slideImages[currentIndex].heading ? <h2 className={slideImages[currentIndex].hAnimation}>{slideImages[currentIndex].heading}</h2>:null}
-					      {slideImages[currentIndex].para ? <div className={slideImages[currentIndex].pAnimation} dangerouslySetInnerHTML={{__html: slideImages[currentIndex].para}}></div>:null}
+					      {image.heading ? <h2 className={image.hAnimation}>{image.heading}</h2>:null}
+					      {image.para ? <div className={image.pAnimation} dangerouslySetInnerHTML={{__html: image.para}}></div>:null}
 					</div>
 					<div className="col-md-6 col-lg-4"></div></>
-				}
+				}	
 			</div>
 		    </div>
 		  </div>
 	      </Carousel.Item>
+		))}
 	 </Carousel>
     </div></>
 }

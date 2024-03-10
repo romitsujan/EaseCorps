@@ -351,6 +351,7 @@ section {
 
 .section-title {
   padding-bottom: 40px;
+	text-align:center;
 }
 
 .section-title h2 {
@@ -374,7 +375,7 @@ section {
   margin: 4px 10px;
 }
 
-.section-title p {
+.section-title h2 {
   margin: 0;
   margin: 0;
   font-size: 36px;

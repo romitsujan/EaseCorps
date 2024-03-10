@@ -4,7 +4,7 @@ import Home from './pages/Home';
 const App = () => {
 	return <Router basename={'/EaseCorps/'}>
 			<Routes>
-				<Route path="/" exact element={<Home />}/>
+				<Route path="/" exact='true' element={<Home />}/>
 			</Routes>
 	</Router>
 }
