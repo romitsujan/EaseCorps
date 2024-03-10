@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/EaseCorps/static/css/main.e8fb49f9.css",
-    "main.js": "/EaseCorps/static/js/main.860d17d2.js",
+    "main.css": "/EaseCorps/static/css/main.ff56aa43.css",
+    "main.js": "/EaseCorps/static/js/main.2eb3c430.js",
     "static/js/453.419a5d54.chunk.js": "/EaseCorps/static/js/453.419a5d54.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/EaseCorps/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/EaseCorps/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "index.html": "/EaseCorps/index.html",
-    "main.e8fb49f9.css.map": "/EaseCorps/static/css/main.e8fb49f9.css.map",
-    "main.860d17d2.js.map": "/EaseCorps/static/js/main.860d17d2.js.map",
+    "main.ff56aa43.css.map": "/EaseCorps/static/css/main.ff56aa43.css.map",
+    "main.2eb3c430.js.map": "/EaseCorps/static/js/main.2eb3c430.js.map",
     "453.419a5d54.chunk.js.map": "/EaseCorps/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8fb49f9.css",
-    "static/js/main.860d17d2.js"
+    "static/css/main.ff56aa43.css",
+    "static/js/main.2eb3c430.js"
   ]
 }
